@@ -147,7 +147,12 @@ rosbot_xl_gazebo --> rosbot_xl_bringup --> rosbot_xl_controller --> rosbot_xl_de
 
 Usefull files to study are `rosbot_xl.urdf.xacro` in `rosbot_xl_description/urdf` and `intel_realsense_d435.urdf.xacro` in `ros_components_description/urdf`. Try to edit this files to see in simulation what is changed and how to spawn the same model of camera in different positions and with different names
 
-## Some Informationss about Aruco (size and models to insert in simulation)
+## Some Informationss about Aruco (size and dictionary to insert in simulation)
+
+In the simulation, after you have modified the rosbot model with the cameras, you can edit the world file by adding the ArUco-markers models.
+ArUco models size must be 0.1m x 0.1m. See this [link](tn1ck.github.io/aruco-print/) to have an idea. The dictionary is DICT_ARUCO_ORIGINAL. Here some useful links
+- https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco
+- https://github.com/TN1ck/aruco-print
 
 ## How to develop code
 
